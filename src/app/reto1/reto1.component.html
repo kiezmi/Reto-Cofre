@@ -1,0 +1,11 @@
+<div>
+  <p>Añade tu nombre: {{texto|uppercase}}</p>
+  <input [(ngModel)]="texto">
+  <p>Contraseña:</p>
+  <input [(ngModel)]="Password">
+
+  <p *ngIf="Password==='Password'" >Acertaste: {{Password}}</p>
+  <p *ngIf="Password!=='Password'"><img src="assets/cofre-cerrado.jpg"></p>
+  <p *ngIf="Password==='Password'"><img src="assets/cofre-abierto.jpg"></p>
+  
+</div>
